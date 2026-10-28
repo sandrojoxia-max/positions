@@ -1,0 +1,266 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: limegreen; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+.wrapper {
+    position: static;
+    padding: 40px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.promo-banner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: darkorange;
+    color: white;
+    text-align: center;
+    padding: 12px 0;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    z-index: 1100;
+}
+
+.divbar {
+    position: sticky;
+    top: 43px; 
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 15px 0;
+    z-index: 1000;
+}
+
+.div-link {
+    text-decoration: none;
+    color: dimgray;
+    font-weight: 600;
+    font-size: 15px;
+    padding: 6px 12px;
+    border-radius: 4px;
+}
+
+.div-link:hover, .div-link.active {
+    color: darkorange;
+    background-color: papayawhip;
+}
+
+.card-container {
+    position: relative; 
+    width: 680px;
+    background-color: white;
+    border-radius: 12px;
+    margin-left: 50px; 
+    min-height: 480px;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.image-panel {
+    position: absolute;
+    top: -30px;
+    left: -40px;
+    width: 260px;
+    height: calc(100% + 60px);
+    background-color: gold;
+    border-radius: 16px;
+    padding: 24px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.action-icons {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    color: white;
+}
+.main-graphic {
+    font-size: 110px;
+    text-align: center;
+    margin: auto 0;
+}
+.thumbnail-row {
+    display: flex;
+    justify-content: space-between;
+    background-color: khaki;
+    padding: 6px;
+    border-radius: 8px;
+}
+.thumb {
+    width: 45px;
+    height: 45px;
+    background-color: white;
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    color: darkorange;
+    font-weight: 600;
+}
+.thumb.active {
+    outline: 2px solid darkorange;
+}
+.content-panel {
+    position: static;
+    margin-left: 260px; 
+    padding: 40px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.product-title {
+    margin: 0 0 4px 0;
+    font-size: 28px;
+    color: black;
+    font-weight: 700;
+}
+.product-code {
+    margin: 0 0 24px 0;
+    color: silver;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+.price-tag {
+    color: orangered;
+    font-weight: 700;
+    margin-bottom: 24px;
+}
+.price-tag .currency {
+    font-size: 18px;
+    vertical-align: top;
+    position: relative;
+    top: 4px;
+}
+.price-tag .amount {
+    font-size: 42px;
+    line-height: 42px;
+}
+.section-label {
+    font-size: 11px;
+    color: lightgray;
+    letter-spacing: 1px;
+    margin: 0 0 10px 0;
+}
+
+.variety-swatches {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+.swatch {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+.swatch.Alphonso { background-color: orange; }
+.swatch.Honey { background-color: yellow; }
+.swatch.Tommy { background-color: crimson; }
+.swatch.Kent { background-color: green; }
+.swatch.active {
+    outline: 2px solid black;
+    outline-offset: 2px;
+}
+
+.benefits-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 30px 0;
+    font-size: 13px;
+    color: darkslategray;
+    line-height: 1.6;
+}
+
+.add-to-cart-btn {
+    background-color: darkorange;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    padding: 16px;
+    font-weight: bold;
+    font-size: 14px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+.add-to-cart-btn:hover {
+    transform: translateY(-2px);
+}
+
+.contact-card {
+    min-height: 520px;
+}
+.contact-sidebar {
+    background-color: orangered; 
+}
+.back-link {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 22px;
+}
+.sidebar-text {
+    color: white;
+    font-size: 14px;
+    line-height: 1.5;
+    text-align: center;
+    margin-top: 15px;
+}
+.small-graphic {
+    font-size: 70px
+}
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    font-size: 12px;
+    color: white;
+    background-color: maroon;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid lightgray;
+    border-radius: 6px;
+    font-family: inherit;
+    font-size: 14px;
+    box-sizing: border-box;
+    background-color: whitesmoke;
+}
+.contact-form input:focus, .contact-form textarea:focus {
+    outline: none;
+    border-color: darkorange;
+    background-color: white;
+}

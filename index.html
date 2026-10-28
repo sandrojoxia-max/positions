@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delicious Mango Card</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- 1. FIXED POSITIONING: გლობალური ფასდაკლების ბანერი ეკრანის თავში -->
+    <div class="promo-banner">
+        🔥 Special Offer: Get 20% off on all organic fresh mango orders today!
+    </div>
+
+    <!-- 2. STICKY POSITIONING: ნავიგაციის მენიუ, რომელიც სკროლისას ეკრანის თავში რჩება -->
+    <div class="navbar">
+        <a href="index.html" class="nav-link active">Home Product</a>
+        <a href="contact.html" class="nav-link">Contact Us</a>
+    </div>
+
+    <div class="wrapper">
+        <!-- 3. RELATIVE POSITIONING: კონტეინერი, რომელიც საზღვრავს შიდა აბსოლუტურ ელემენტებს -->
+        <div class="card-container">
+            
+            <!-- 4. ABSOLUTE POSITIONING: სურათის ბლოკი, რომელიც გამოწეულია ბარათის ფარგლებს გარეთ -->
+            <div class="image-panel">
+                <div class="action-icons">
+                    <span class="icon">&lt;</span>
+                    <span class="icon">❤️</span>
+                </div>
+                <div class="main-graphic">🥭</div>
+                <div class="thumbnail-row">
+                    <div class="thumb active">🥭</div>
+                    <div class="thumb">slice</div>
+                    <div class="thumb">cube</div>
+                    <div class="thumb">tree</div>
+                </div>
+            </div>
+
+            <!-- 5. STATIC POSITIONING: ჩვეულებრივი ტექსტური ბლოკი, რომელიც მიჰყვება კოდის დინებას -->
+            <div class="content-panel">
+                <h1 class="product-title">Delicious Mango</h1>
+                <p class="product-code">COD: 5932A</p>
+                
+                <div class="price-tag">
+                    <span class="currency">R$</span>
+                    <span class="amount">9.45</span>
+                </div>
+
+                <h3 class="section-label">SELECT A VARIETY</h3>
+                <div class="variety-swatches">
+                    <span class="swatch Alphonso active" title="Alphonso"></span>
+                    <span class="swatch Honey" title="Honey"></span>
+                    <span class="swatch Tommy" title="Tommy Atkins"></span>
+                    <span class="swatch Kent" title="Kent"></span>
+                </div>
+
+                <div class="benefits-section">
+                    <h3 class="section-label">BENEFITS</h3>
+                    <ul class="benefits-list">
+                        <li>* Rich in protective antioxidants like beta-carotene.</li>
+                        <li>* Supports immune system health via high Vitamin C.</li>
+                        <li>*Promotes healthy digestion with prebiotic fiber.</li>
+                        <li>* Excellent source of folate and copper.</li>
+                    </ul>
+                </div>
+
+                <button class="add-to-cart-btn">ADD TO CART</button>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
+    
